@@ -1,0 +1,68 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --card-bg: #f0f0f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+      --bg-color: #1a1a1a;
+      --text-color: #ffffff;
+      --card-bg: #2d2d2d;
+  }
+}
+
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --card-bg: #f0f0f0;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --card-bg: #2d2d2d;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}

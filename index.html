@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Switcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body hidden>
+    <div class="theme-toggle">
+        <button onclick="toggleTheme()" id="themeButton">Toggle Theme</button>
+    </div>
+
+    <div class="container">
+        <h1>Theme Switcher Demo</h1>
+
+        <div class="card">
+            <h2>About</h2>
+            <p>This page demonstrates a theme switcher that:</p>
+            <ul>
+                <li>Automatically detects system theme preference</li>
+                <li>Allows manual theme switching</li>
+                <li>Persists theme choice in localStorage</li>
+                <li>Provides smooth transitions between themes</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>How it works</h2>
+            <p>The theme system uses CSS custom properties (variables) to manage colors. It responds to both the system's color scheme preference and manual user selection.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
